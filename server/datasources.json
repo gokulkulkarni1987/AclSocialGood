@@ -1,0 +1,16 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "SociallyGoodACL": {
+    "host": "ds119675.mlab.com",
+    "port": 19675,
+    "url": "",
+    "database": "socially_good_acl",
+    "password": "admin123",
+    "name": "SociallyGoodACL",
+    "user": "gokulkulkarnisoczen",
+    "connector": "mongodb"
+  }
+}

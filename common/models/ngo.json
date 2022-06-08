@@ -1,0 +1,39 @@
+{
+  "name": "NGO",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "mission": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "nGOUser": {
+      "type": "belongsTo",
+      "model": "NGOUser",
+      "foreignKey": "ngoUserId",
+      "options": {
+        "nestRemoting": true
+      }
+    },
+    "chapters": {
+      "type": "hasMany",
+      "model": "Chapter",
+      "foreignKey": "ngoId",
+      "options": {
+        "nestRemoting": true
+      }
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
